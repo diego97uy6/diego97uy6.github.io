@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />  
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />  
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+
+<body>
+  <center>
+ <p>Esta página contiene el segundo script</p>
+</center>
+
+<textarea cols='80' rows='26'>
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="utf-8" />
+
+<title>Web Storage API ejemplo aprenderaprogramar.com</title>
+
+<script type="text/javascript">
+
+function addProducto(){
+
+var producto=document.getElementById('producto').value;
+
+var precio=document.getElementById('precio').value;
+
+sessionStorage.setItem(producto,precio); //ó sessionStorage[producto]=precio
+
+mostrarDatos(producto);
+
+}
+
+ 
+
+function mostrarDatos(){
+
+var datosDisponibles=document.getElementById('datosDisponibles');
+
+datosDisponibles.innerHTML='';
+
+for(var i=0;i<sessionStorage.length;i++){
+
+                var producto=sessionStorage.key(i);
+
+                var precio=sessionStorage.getItem(producto);
+
+                datosDisponibles.innerHTML += '<div>'+producto+' - '+precio+'</div>';
+
+                }
+
+}
+
+ 
+
+function limpiarVista() {
+
+var datosDisponibles=document.getElementById('datosDisponibles');
+
+datosDisponibles.innerHTML='Limpiada vista. Los datos permanecen.';
+
+}
+
+ 
+
+function borrarTodo() {sessionStorage.clear(); mostrarDatos(); }
+
+ 
+
+</script>
+
+</head>
+
+<body>
+
+<form name="formulario">
+
+<p>Nombre del producto:<br><input type="text" name="producto" id="producto"></p>
+
+<p>Precio:<br><input type="text" name="precio" id="precio"></p>
+
+<p><input type="button" onclick="addProducto()" name="guardar" id="guardar" value="guardar"></p>
+
+<p><input type="button" onclick="limpiarVista()" name="limpiar" id="limpiar" value="Limpiar Vista"></p>
+
+<p><input type="button" onclick="borrarTodo()" name="borrar" id="borrar" value="Borrar todo"></p>
+
+</form>
+
+<br/>
+
+<div id="datosDisponibles">No hay información almacenada</div>
+
+</body>
+</html>
+</textarea>
+</body>
+</html>

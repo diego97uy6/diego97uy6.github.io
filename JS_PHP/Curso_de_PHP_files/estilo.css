@@ -1,0 +1,81 @@
+/*BODY {font-family: verdana,arial; font-size: 10pt}
+H1 {font-family: verdana,arial; font-size: 16pt; font-weight: bold; color: #0066CC}
+H2 {font-family: verdana,arial; font-size: 12pt; font-weight: bold; font-style: italic;
+    color: black}
+H3 {font-family: verdana,arial; font-size: 10pt; font-weight: bold; color: black}
+TH {font-family: verdana,arial; font-size: 10pt; font-weight: bold; color: white;
+    background: #0066CC; text-align: left}
+TD {font-family: verdana,arial; font-size: 10pt}*/
+
+/* General */
+   BODY {font-family: verdana, arial, sans-serif;}
+   
+/* Cabecera */
+
+   P.titulo {font-size: 1.1em; font-weight: bold; margin: 0 0 0.5em 0; color: #0066CC;}
+   P.autor {font-size: 0.8em; font-weight: bold; margin: 0 0 0.5em 0; }
+   P.institucion {font-size: 0.8em; font-style: italic; margin: 0 0 0.2em 0;}
+   IMG.logo {float: right; margin: 0 1em 0.5em 1em;}
+
+/* Cajas DIV */
+   #contenido {clear: left; margin-top: 2em;}
+   #tabladecontenidos {border: 1px dotted blue; background-color: #E6EEF6;
+      padding-left: 0.5em; margin-right: 20%; margin-left: 20%;}
+
+/* Contenido */
+   H1 {font-size: 1em; color: white; background:#0863CE; padding: 0.1em 0.2em;}
+   H2 {font-family: verdana,arial; background:#0863CE; font-size: 12pt; font-weight: bold; font-style: italic;
+    color: white}
+	H3 {font-family: verdana,arial; font-size: 10pt; font-weight: bold; color: black}
+	TH {font-family: verdana,arial; font-size: 10pt; font-weight: bold; color: white;
+    background: #0066CC; text-align: left}
+	TD {font-family: verdana,arial; font-size: 10pt}
+
+   UL {list-style-image: url(rombo.gif);}
+   ADDRESS {font-size: 0.8em; font-style: italic;}
+   .nota {font-size: 0.8em; font-style: italic;}
+
+   .t1{
+      background-color: #0d531f;
+      font-size: 1m; color: #E6EEF6;
+    }
+   .t2{
+      background-color: rgb(225, 226, 184);
+   }
+   .t3{
+      background-color: #0d531f;
+      font-size: 1m; color: #E6EEF6;
+   }
+   .t4{
+      background-color: rgb(225, 226, 184);
+   }
+   .t5{
+      background-color: #0d531f;
+      font-size: 1m; color: #E6EEF6;
+   }
+   .t6{
+      background-color: rgb(225, 226, 184);
+   }
+
+   footer{
+      background-color: #0d531f;
+      padding: 60px 0 30px 0;
+      margin: auto;
+      overflow: hidden;
+      text-align:center;
+      color: #E6EEF6;
+      font-size: 25px;
+  }
+
+  td{
+   color: #000000;
+   font-size: 25px;
+   text-align: center;
+
+  }
+  table{
+   background: #30E8BF;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+   width: 100%;
+  }
